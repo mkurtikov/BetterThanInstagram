@@ -1,0 +1,35 @@
+{
+  "name": "YalantisTest",
+  "version": "1.0.0",
+  "description": "Image's manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kseniia S",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.8.2",
+    "query-string-params": "^1.7.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-images-uploader": "^1.1.0",
+    "react-progress-button": "^5.1.0",
+    "react-region-select": "^2.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "devDependencies": {
+    "html-loader": "^0.5.5"
+  }
+}

@@ -1,0 +1,34 @@
+.editingContainer {
+  width: 55vw;
+  max-width: 800px;
+  margin: 0 auto; }
+  .editingContainer img {
+    display: block;
+    margin-bottom: 3%; }
+
+.imgContainer {
+  overflow: hidden; }
+
+.msg {
+  font-size: 21px;
+  margin-bottom: 2%; }
+
+.btnSave {
+  color: #fff;
+  padding: 7px 10px 9px;
+  background: #5dbfcc; }
+
+textarea {
+  width: 100%;
+  height: 15vh;
+  font-size: 18px;
+  min-height: 90px;
+  padding: 10px 15px;
+  margin-bottom: 3%;
+  box-sizing: border-box;
+  border-color: #ccc;
+  resize: none; }
+  textarea:active {
+    border-color: #2a85cc; }
+
+/*# sourceMappingURL=styles.css.map */

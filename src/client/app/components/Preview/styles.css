@@ -1,0 +1,43 @@
+.previewContainer {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: center; }
+  .previewContainer button {
+    margin: 0 8px; }
+  .previewContainer .btnBack a {
+    color: #3b3b3b; }
+  .previewContainer .btnEdit a {
+    color: #22bc82; }
+
+.imgContainer {
+  position: relative;
+  margin: 0 auto 3%; }
+  .imgContainer img {
+    display: block;
+    width: 100%; }
+
+.msg {
+  font-size: 21px;
+  margin-bottom: 2%; }
+
+.tooltip {
+  position: absolute; }
+  .tooltip span {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 150px;
+    color: #fff;
+    background: #2867cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0; }
+  .tooltip:hover span {
+    opacity: 1;
+    -webkit-transition: opacity linear 0.3s;
+    -moz-transition: opacity linear 0.3s;
+    -ms-transition: opacity linear 0.3s;
+    -o-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,53 @@
+.managerContainer {
+  width: 55vw;
+  max-width: 800px;
+  margin: 0 auto; }
+
+.uploadContainer {
+  position: relative;
+  height: 40vh;
+  min-height: 320px;
+  text-align: center;
+  border: 4px dashed #ccc;
+  padding-left: 8px; }
+  .uploadContainer form, .uploadContainer div:not(.progressBar) {
+    height: 100%; }
+  .uploadContainer span, .uploadContainer input {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 50%; }
+  .uploadContainer span {
+    font-size: 21px;
+    -webkit-transform: translateY(-32%);
+    -ms-transform: translateY(-32%);
+    transform: translateY(-32%); }
+  .uploadContainer input {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .uploadContainer .progressBar {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 15px;
+    height: 8px; }
+    .uploadContainer .progressBar > div {
+      width: 100%;
+      position: relative;
+      height: 8px;
+      margin-top: 4px; }
+
+.btnSave {
+  width: 200px;
+  height: 36px; }
+
+.uploadedImgContainer img {
+  display: block;
+  width: 100%;
+  margin-bottom: 3%; }
+.uploadedImgContainer .btnSave {
+  color: #fff;
+  background: #5dbfcc; }
+
+/*# sourceMappingURL=styles.css.map */
