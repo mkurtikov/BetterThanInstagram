@@ -23,8 +23,7 @@ export default class Preview extends Component {
         const parsed = urlToProperty(this.props.location.search);
         const imageUrl = parsed.img[0];
         getImageData(imageUrl, (imageData) => {
-            this.setState({ imageDataObject: imageData[0] })
-            console.log(imageData[0]);
+            this.setState({ imageDataObject: imageData[0] });
         });
     }
 

@@ -5,7 +5,7 @@ import RegionSelect from 'react-region-select';
 import Styles from './styles.scss';
 import { addNewData } from "../utils/mockApiRequests";
 
-export default class MainPanel extends Component {
+export default class Adding extends Component {
 
     constructor (props) {
         super(props);

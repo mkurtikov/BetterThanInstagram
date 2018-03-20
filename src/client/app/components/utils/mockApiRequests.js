@@ -56,9 +56,7 @@ export function editImage (updatedImageData, onSuccess) {
         if(itemData.url === updatedImageData.url) {
             const itemDataArray = Object.values(itemData),
                 updatedImageDataArray = Object.values(updatedImageData);
-            console.log(itemDataArray);
             itemDataArray.forEach((item) => {
-                console.log(item);
             });
             for(let k = 0; k < itemDataArray.length; k++) {
                 if(itemDataArray[k] !== updatedImageDataArray[k] && updatedImageDataArray[k] !== 'undefined') {

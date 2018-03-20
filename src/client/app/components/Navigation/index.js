@@ -5,7 +5,7 @@ import {
     Switch,
     HashRouter
 } from "react-router-dom";
-import MainPanel from '../MainPanel';
+import Adding from '../Adding';
 import ImagesList from '../ImagesList';
 import Editing from '../Editing';
 import Preview from '../Preview';
@@ -20,7 +20,7 @@ export default class Navigation extends Component {
                 <nav className={Styles.nav}>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/MainPanel'>Add Image</Link></li>
+                        <li><Link to='/Adding'>Add Image</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -30,7 +30,7 @@ export default class Navigation extends Component {
             <main>
                 <Switch>
                     <Route exact path='/' component={ImagesList}/>
-                    <Route path='/MainPanel' component={MainPanel}/>
+                    <Route path='/Adding' component={Adding}/>
                     <Route path='/Editing' component={Editing}/>
                     <Route path='/Preview' component={Preview}/>
                 </Switch>
