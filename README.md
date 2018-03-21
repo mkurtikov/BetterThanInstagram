@@ -1,6 +1,4 @@
-# BetterThenInstagram
-
-Run: ./node_modules/.bin/webpack -d --watch
+Run: ./node_modules/.bin/webpack -d
 
 Hi there!
 First of all, this is not the best version of this project, I'll update and improve it later. As it turned out, the time wasn't enough for me.
