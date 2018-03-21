@@ -41,7 +41,11 @@
 .tooltipText {
     font-size: 19px;
     line-height: 1.2;
+    padding: 0 17px;
     margin-bottom: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 button {

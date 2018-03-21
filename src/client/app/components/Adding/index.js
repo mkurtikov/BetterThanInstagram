@@ -46,16 +46,17 @@ export default class Adding extends Component {
     }
 
     _handleBtnSave () {
-        const tooltipArea = ReactDOM.findDOMNode(this._tooltipArea),
+        const { url, x, y, width, height } = this.state,
+            tooltipArea = ReactDOM.findDOMNode(this._tooltipArea),
             tooltipText = tooltipArea.value,
             progressElement = ReactDOM.findDOMNode(this._progressElement);
         const imgDataArray = {
-            'url': this.state.imgUrl,
+            'url': url,
             'tooltip': tooltipText,
-            'x': this.state.x,
-            'y': this.state.y,
-            'width': this.state.width,
-            'height': this.state.height,
+            'x': x,
+            'y': y,
+            'width': width,
+            'height': height
         };
         addNewData(imgDataArray, () => {
             tooltipArea.value = '';
@@ -126,8 +127,7 @@ export default class Adding extends Component {
 
 
     componentDidMount () {
-        const fileElem = ReactDOM.findDOMNode(this._fileElem),
-            dropbox = ReactDOM.findDOMNode(this._dropboxArea);
+        const dropbox = ReactDOM.findDOMNode(this._dropboxArea);
 
         dropbox.addEventListener('dragenter', this.dragenter, false);
         dropbox.addEventListener('dragover', this.dragover, false);
