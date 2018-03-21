@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router-dom';
 import RegionSelect from 'react-region-select';
 import Styles from './styles.scss';
-import { addNewData } from "../utils/mockApiRequests";
+import { addNewData } from "../../utils/mockApiRequests";
 
 export default class Adding extends Component {
 
@@ -25,7 +25,7 @@ export default class Adding extends Component {
         unsignedUploadPreset: 'iaavwduk',
         callRender: '',
         regions: [],
-        imgUrl: '/',
+        url: '/',
         redirect: false
     };
 
@@ -48,8 +48,7 @@ export default class Adding extends Component {
     _handleBtnSave () {
         const { url, x, y, width, height } = this.state,
             tooltipArea = ReactDOM.findDOMNode(this._tooltipArea),
-            tooltipText = tooltipArea.value,
-            progressElement = ReactDOM.findDOMNode(this._progressElement);
+            tooltipText = tooltipArea.value;
         const imgDataArray = {
             'url': url,
             'tooltip': tooltipText,
@@ -58,13 +57,11 @@ export default class Adding extends Component {
             'width': width,
             'height': height
         };
+        console.log(url);
+
         addNewData(imgDataArray, () => {
-            tooltipArea.value = '';
-            ReactDOM.findDOMNode(this._imgSavingInner).remove();
-            progressElement.style.width = 0;
             this.setState({ redirect: true });
         });
-
     }
 
     _uploadFile (file) {
@@ -88,7 +85,7 @@ export default class Adding extends Component {
                 const img = new Image();
                 img.src = tokens.join('/');
                 img.alt = response.public_id;
-                this.setState({ imgUrl: img.src });
+                this.setState({ url: img.src });
             }
         }).bind(this);
 
@@ -136,10 +133,10 @@ export default class Adding extends Component {
 
 
     render () {
-        const { imgUrl } = this.state;
+        const { url } = this.state;
 
         const imgSavingContent =
-            `${ imgUrl }` === '/'
+            `${ url }` === '/'
                 ? ''
                 : (
                     <div
@@ -153,7 +150,7 @@ export default class Adding extends Component {
                                 constraint
                                 onChange={this.onChange}
                             >
-                                <img src={imgUrl}/>
+                                <img src={url}/>
                             </RegionSelect>
                             <textarea
                                 name='tooltip'

@@ -18,26 +18,26 @@ let imagesData = [
     {
         'url': 'http://res.cloudinary.com/kseniia/image/upload/v1521557115/sjni7grngkwn4rfxrv9y.jpg',
         'tooltip': '<3',
-        'x': 36,
+        'x': 5,
         'y': 15,
-        'width': 59,
-        'height': 31
+        'width': 82,
+        'height': 71
     },
     {
         'url': 'http://res.cloudinary.com/kseniia/image/upload/v1521299082/qqnhq8v0l6codht2vhbo.jpg',
         'tooltip': 'Pepe the Frog (/ˈpɛpeɪ/) is a popular Internet meme. A green anthropomorphic frog with a humanoid body, Pepe originated in a comic by Matt Furie called Boy\'s Club.',
-        'x': 36,
-        'y': 15,
-        'width': 59,
-        'height': 31
+        'x': 20,
+        'y': 14,
+        'width': 35,
+        'height': 29
     },
     {
         'url': 'http://res.cloudinary.com/kseniia/image/upload/v1521298625/p98cqp7ha1fid6t4vlvj.jpg',
         'tooltip': 'Toms River, New Jersey',
-        'x': 36,
-        'y': 15,
-        'width': 59,
-        'height': 31
+        'x': 78,
+        'y': 21,
+        'width': 19,
+        'height': 30
     }
 ];
 

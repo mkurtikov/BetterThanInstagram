@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { urlToProperty } from 'query-string-params';
-import { getImageData } from '../utils/mockApiRequests';
+import { getImageData } from '../../utils/mockApiRequests';
 import Styles from './styles.scss';
 
 export default class Preview extends Component {

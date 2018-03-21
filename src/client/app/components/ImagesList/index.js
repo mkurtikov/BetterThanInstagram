@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { getData, deleteImage } from '../utils/mockApiRequests';
+import { getData, deleteImage } from '../../utils/mockApiRequests';
 
 import Styles from './styles.scss';
 

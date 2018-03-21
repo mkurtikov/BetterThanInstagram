@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Redirect } from 'react-router-dom';
 import RegionSelect from 'react-region-select';
 import { urlToProperty } from 'query-string-params';
-import { getImageData, editImage } from '../utils/mockApiRequests';
+import { getImageData, editImage } from '../../utils/mockApiRequests';
 import Styles from './styles.scss';
 
 export default class Editing extends Component {
